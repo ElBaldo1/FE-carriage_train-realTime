@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import './styleWeb.css';
+import './style.css';
 
 function ImageSearchComponent() {
     const [stationName, setStationName] = useState('');
@@ -37,7 +37,7 @@ function ImageSearchComponent() {
         setDebounceTimer(setTimeout(() => {
             fetchImage();
             console.log('fetching data');
-        }, 3000));
+        }, 2000));
 
         // Clean up function to clear the timer when the component unmounts
         return () => {
@@ -69,7 +69,7 @@ function ImageSearchComponent() {
             </div>
             {stationsImage && (
                 <div className="img-container">
-                    <img src={`data:image/png;base64,${stationsImage}`} alt="Generated Train Layout"/>
+                    <img src={`data:image/png;base64,${stationsImage}`} alt="Image loading ..."/>
                 </div>
             )}
         </div>
