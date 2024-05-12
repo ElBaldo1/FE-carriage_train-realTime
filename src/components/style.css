@@ -1,0 +1,132 @@
+.train-display {
+  background-color: #004481;
+  color: white;
+  font-family: Arial, sans-serif;
+  border-radius: 15px; /* Aggiungi questa linea per arrotondare i bordi */
+  width: 60%; /* Imposta la larghezza al 100% */
+  margin: 0 auto; /* Centra il contenitore sulla pagina */
+  border: 5px solid #ccc; /* Aggiungi un bordo per la decorazione */
+  padding: 5px; /* Aggiungi dello spazio intorno al contenuto per la decorazione */
+}
+
+.line-container {
+  display: flex;
+  flex-direction: row; /* Assicurati che i segmenti siano allineati orizzontalmente */
+  overflow-x: auto; /* Aggiungi lo scorrimento orizzontale se il contenuto supera la larghezza */
+  width: 100%;
+  padding: 20px 0;
+  border: 2px solid white;
+}
+
+
+.segment {
+  display: flex;
+  flex-direction: row; /* Modifica da column a row */
+  align-items: center;
+  position: relative;
+  border: 1px solid white; /* Aggiungi un bordo bianco per dividere i segmenti */
+  margin: 10px; /* Aggiungi un margine per separare i segmenti */
+  background-color: white; /* Imposta lo sfondo del segmento come bianco */
+}
+
+.segment-letter {
+  position: absolute;
+  top: -20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.carriage-list {
+  width: 98%;  ; /* Imposta la larghezza al 100% */
+  border: 1px solid #000; /* Riduci lo spessore del bordo a 1px */
+  background-color: #0072bc; /* Imposta un colore di sfondo ancora più chiaro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Aggiungi un effetto di sfumatura */
+  overflow: auto; /* Aggiungi questa linea */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.carriage {
+  margin: 5px 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* Aggiungi questa linea */
+
+}
+
+.carriage-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carriage-features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.carriage.accessible {
+  background-color: yellow; /* Giallo per accessibilità */
+  color: black;
+}
+
+.icon-bike, .icon-wheelchair {
+  margin-left: 5px;
+}
+
+.search-bar {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  border: 3px solid ; /* Aggiungi un bordo più spesso e di colore più intenso */
+  border-radius: 5px; /* Aggiungi un bordo arrotondato per un aspetto più morbido */
+}
+
+.search-bar-input {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #000; /* Aggiungi un bordo nero di default */
+}
+
+.search-bar-input::placeholder {
+  font-size: 20px;
+}
+
+.search-bar-input:focus {
+  border: 2px solid #007bff; /* Quando l'input è in focus, il bordo diventa blu */
+}
+.station-name {
+  font-size: 1.5em; /* Aumenta la dimensione del font del nome della stazione */
+  padding-left: 20px; /* Aggiungi dello spazio a sinistra */
+}
+
+.station-rail {
+  font-size: 1em; /* Aumenta la dimensione del font del numero binario */
+  padding-left: 40px; /* Aggiungi dello spazio a destra */
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.train-name {
+  text-align: right;
+  padding-right: 10px;
+}
+.direction-arrow {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

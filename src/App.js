@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import SearchBar from "./components/SearchBar";
+import {useState} from "react";
+import TrainDisplay from "./components/TrainDisplay";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [stations, setStations] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+
+    return (
+        <div>
+            <SearchBar setResult={setStations} setLoading={setLoading}  />
+            {
+                stations.map((station, index) => (
+                    <>
+                        <h4 className="station-name">{station.stationName}</h4>
+                        <h5 className="station-rail">Rail 4</h5>
+                        <TrainDisplay key={index} station={station} loading={loading} />
+                    </>
+                ))
+            }
+        </div>
+    );
 }
 
 export default App;
