@@ -1,0 +1,22 @@
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-image {
+    max-width: 50%;  /* Reduces the image width to 50% of its container */
+    height: auto;  /* Maintains aspect ratio */
+    opacity: 0.8;  /* Adjusted opacity for slight transparency */
+    display: block;  /* Necessary for margins to function properly for centering */
+    margin: 0 auto;  /* Auto margins for horizontal centering */
+}
+
+.image-container h1 {
+    color: white;  /* Sets the color of the text in the h1 tag to white */
+    opacity: 0.8;  /* Adds transparency to the text */
+    transition: opacity 0.5s ease;  /* Smooth transition for fading effect */
+}
+
+.image-container:hover h1 {
+    opacity: 1;  /* Full opacity when hovering over the container */
+}
