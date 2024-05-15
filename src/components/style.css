@@ -1,5 +1,5 @@
 body {
-    background-color: #87CEEB; /* A lighter sky blue color */
+    background-color: #87CEEB; /* Light sky blue color */
 }
 
 .container {
@@ -17,27 +17,25 @@ body {
 .search-input {
     padding: 10px 20px;
     font-size: 16px;
-    width: 30%;
-    min-width: 250px;
+    width: 40%; /* Increased width */
+    min-width: 300px; /* Adjusted minimum width */
 }
 
 .img-container {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
+    width: 90%; /* Increased to use more of the available space */
+    margin: 20px auto; /* Increased top margin for better spacing */
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    width: 80%; /* Reduce the container width to 80% of the parent element */
-    max-width: 960px; /* Set a max-width to prevent the container from becoming too large on wider screens */
-    border: 1px solid #ccc; /* Optional: adds a border around the image container */
-    padding: 10px; /* Optional: adds some space inside the container around the image */
-    background-color: white; /* Optional: sets a background color for the image container */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for better visual separation */
+    max-width: 1200px; /* Increased max-width */
+    border: 2px solid #ccc; /* Thicker border for emphasis */
+    padding: 20px; /* Increased padding for a larger visual buffer */
+    background-color: #FFFFFF; /* Ensures a white background for the image */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Darker shadow for more depth */
 }
 
 .img-container img {
-    width: 80%; /* The image will take up 100% of the .img-container width */
+    width: 100%; /* Image will fill the container completely */
     height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensures the whole image is visible within the bounds of its element */
+    object-fit: contain; /* Ensures the whole image is visible */
 }
