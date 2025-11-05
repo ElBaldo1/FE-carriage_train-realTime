@@ -1,21 +1,52 @@
 {
-  "name": "fe_geospatial",
-  "version": "0.1.0",
-  "private": true,
+  "name": "fe-carriage-train-realtime",
+  "version": "1.0.0",
+  "description": "Responsive React interface showcasing live carriage train compositions with search and accessibility best practices.",
+  "private": false,
+  "author": "Antonio Baldari",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baldari-dev/fe-carriage-train-realtime.git"
+  },
+  "homepage": "https://github.com/baldari-dev/fe-carriage-train-realtime",
+  "keywords": [
+    "react",
+    "railway",
+    "portfolio",
+    "frontend",
+    "real-time"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.6.8",
+    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest-dom": "^5.4.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^6.2.0",
+    "prettier": "^3.2.5"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar matches the snapshot 1`] = `
+<div>
+  <form
+    aria-label="Train station search"
+    class="search-bar"
+    role="search"
+  >
+    <label
+      class="search-bar__label"
+      for="station-search-input"
+    >
+      Station
+    </label>
+    <div
+      class="search-bar__controls"
+    >
+      <input
+        aria-describedby="station-search-help"
+        aria-label="Search for a train station"
+        autocomplete="off"
+        class="form-control search-bar__input"
+        id="station-search-input"
+        placeholder="Search by station name"
+        type="search"
+        value="Brussels"
+      />
+      <button
+        class="btn btn-primary search-bar__button"
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
+    <p
+      class="visually-hidden"
+      id="station-search-help"
+    >
+      Type a station name to view the latest train composition and details.
+    </p>
+  </form>
+</div>
+`;
