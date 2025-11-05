@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrainDisplay matches the snapshot 1`] = `
+<div>
+  <section
+    aria-label="Train search results"
+    class="train-display"
+  >
+    <article
+      class="train-card"
+    >
+      <header
+        class="train-card__header"
+      >
+        <div
+          class="train-card__title-group"
+        >
+          <h2
+            aria-label="Service S5 to Antwerpen-Centraal"
+            class="train-card__title"
+          >
+            S5
+             to 
+            Antwerpen-Centraal
+          </h2>
+          <p
+            aria-label="Departing from Brussels Central"
+            class="train-card__subtitle"
+          >
+            Departing from 
+            Brussels Central
+          </p>
+        </div>
+        <div
+          aria-label="Departure details"
+          class="train-card__meta"
+        >
+          <span
+            class="badge bg-primary"
+          >
+            Departure 
+            12:05
+          </span>
+          <span
+            class="badge bg-secondary"
+          >
+            Platform 
+            4
+          </span>
+          <span
+            class="badge bg-success"
+          >
+            On time
+          </span>
+        </div>
+      </header>
+      <section
+        aria-label="Service details"
+        class="train-card__details"
+      >
+        <div>
+          <h3
+            class="train-card__section-title"
+          >
+            Next stops
+          </h3>
+          <ul
+            class="train-card__stops"
+          >
+            <li>
+              Schuman
+            </li>
+            <li>
+              Merode
+            </li>
+          </ul>
+        </div>
+        <div
+          aria-live="polite"
+          class="train-card__status"
+        >
+          <h3
+            class="train-card__section-title"
+          >
+            Live status
+          </h3>
+          <p
+            class="train-card__status-item"
+          >
+            <strong>
+              Occupancy:
+            </strong>
+             
+            Moderate
+          </p>
+          <p
+            class="train-card__status-item"
+          >
+            <strong>
+              Last update:
+            </strong>
+             
+            19:45
+          </p>
+        </div>
+      </section>
+      <div
+        aria-label="Train carriage composition"
+        class="carriage-list"
+        role="list"
+      >
+        <div
+          aria-label="Direction of travel"
+          aria-live="polite"
+          class="carriage-list__direction"
+        >
+          Departure direction: Right
+        </div>
+        <div
+          class="carriage-list__segments"
+        >
+          <section
+            aria-label="Segment A"
+            class="carriage-list__segment"
+            role="group"
+          >
+            <header
+              class="carriage-list__segment-header"
+            >
+              <span
+                class="badge bg-secondary"
+              >
+                Segment 
+                A
+              </span>
+            </header>
+            <div
+              class="carriage-list__segment-body"
+            >
+              <div
+                class="carriage"
+                data-testid="carriage"
+              >
+                <div
+                  aria-label="Carriage 1"
+                  class="carriage__number"
+                >
+                  1
+                </div>
+                <ul
+                  aria-label="Features for carriage 1"
+                  class="carriage__features"
+                >
+                  <li
+                    class="carriage__feature"
+                  >
+                    <span
+                      aria-label="Bicycle storage available"
+                      class="badge bg-info text-dark"
+                    >
+                      Bike
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="carriage"
+                data-testid="carriage"
+              >
+                <div
+                  aria-label="Carriage 2"
+                  class="carriage__number"
+                >
+                  2
+                </div>
+                <ul
+                  aria-label="Features for carriage 2"
+                  class="carriage__features"
+                >
+                  <li
+                    class="carriage__feature"
+                  >
+                    <span
+                      aria-label="Wheelchair accessible carriage"
+                      class="badge bg-info text-dark"
+                    >
+                      Accessible
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
+`;

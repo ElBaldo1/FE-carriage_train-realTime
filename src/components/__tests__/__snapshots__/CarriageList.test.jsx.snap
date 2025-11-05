@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarriageList matches the snapshot 1`] = `
+<div>
+  <div
+    aria-label="Train carriage composition"
+    class="carriage-list"
+    role="list"
+  >
+    <div
+      aria-label="Direction of travel"
+      aria-live="polite"
+      class="carriage-list__direction"
+    >
+      Departure direction: Right
+    </div>
+    <div
+      class="carriage-list__segments"
+    >
+      <section
+        aria-label="Segment A"
+        class="carriage-list__segment"
+        role="group"
+      >
+        <header
+          class="carriage-list__segment-header"
+        >
+          <span
+            class="badge bg-secondary"
+          >
+            Segment 
+            A
+          </span>
+        </header>
+        <div
+          class="carriage-list__segment-body"
+        >
+          <div
+            class="carriage"
+            data-testid="carriage"
+          >
+            <div
+              aria-label="Carriage 1"
+              class="carriage__number"
+            >
+              1
+            </div>
+            <ul
+              aria-label="Features for carriage 1"
+              class="carriage__features"
+            >
+              <li
+                class="carriage__feature"
+              >
+                <span
+                  aria-label="Bicycle storage available"
+                  class="badge bg-info text-dark"
+                >
+                  Bike
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="carriage"
+            data-testid="carriage"
+          >
+            <div
+              aria-label="Carriage 2"
+              class="carriage__number"
+            >
+              2
+            </div>
+            <ul
+              aria-label="Features for carriage 2"
+              class="carriage__features"
+            >
+              <li
+                class="carriage__feature"
+              >
+                <span
+                  aria-label="No specific features"
+                  class="badge bg-light text-muted"
+                >
+                  Standard
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;
